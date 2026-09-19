@@ -46,6 +46,13 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
         }
+
+        /* Gradient Text */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-orange selection:text-white">
@@ -67,8 +74,8 @@
                 <!-- Desktop Nav -->
                 <nav class="hidden md:flex space-x-8">
                     <a href="#" class="text-slate-700 hover:text-brand-orange font-semibold transition-colors">Home</a>
+                    <a href="#categories" class="text-slate-700 hover:text-brand-orange font-semibold transition-colors">Categories</a>
                     <a href="#products" class="text-slate-700 hover:text-brand-orange font-semibold transition-colors">Products</a>
-                    <a href="#categories" class="text-slate-700 hover:text-brand-orange font-semibold transition-colors">Catalogue</a>
                     <a href="#about" class="text-slate-700 hover:text-brand-orange font-semibold transition-colors">About Us</a>
                     <a href="#contact" class="text-slate-700 hover:text-brand-orange font-semibold transition-colors">Contact</a>
                 </nav>
@@ -77,8 +84,8 @@
                 <div class="hidden md:flex items-center space-x-5">
                     <a href="https://wa.me/919538773388?text=Hi%20Solid%20Packagings%2C%20I%20would%20like%20to%20enquire%20about%20your%20packaging%20products." 
                        target="_blank" rel="noopener noreferrer"
-                       class="bg-brand-blue hover:bg-blue-800 text-white px-6 py-2.5 rounded-md font-semibold transition-all shadow-md flex items-center gap-2">
-                        WhatsApp Us
+                       class="bg-brand-blue hover:bg-blue-800 text-white px-6 py-2.5 rounded-md font-bold transition-all shadow-md flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg text-whatsapp"></i> WhatsApp Us
                     </a>
                 </div>
 
@@ -95,8 +102,8 @@
         <div id="mobile-menu" class="hidden md:hidden bg-brand-blue absolute w-full shadow-xl border-t border-blue-800">
             <div class="px-4 pt-2 pb-6 space-y-1 text-center">
                 <a href="#" class="block px-3 py-3 text-base font-medium text-white hover:bg-blue-800 rounded-md">Home</a>
+                <a href="#categories" class="block px-3 py-3 text-base font-medium text-white hover:bg-blue-800 rounded-md">Categories</a>
                 <a href="#products" class="block px-3 py-3 text-base font-medium text-white hover:bg-blue-800 rounded-md">Products</a>
-                <a href="#categories" class="block px-3 py-3 text-base font-medium text-white hover:bg-blue-800 rounded-md">Catalogue</a>
                 <a href="#about" class="block px-3 py-3 text-base font-medium text-white hover:bg-blue-800 rounded-md">About Us</a>
                 <a href="#contact" class="block px-3 py-3 text-base font-medium text-white hover:bg-blue-800 rounded-md">Contact</a>
             </div>
@@ -117,7 +124,7 @@
                         <i class="fa-solid fa-industry mr-2 text-brand-orange"></i> B2B Packaging Supplier in Bengaluru
                     </span>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-                        Reliable Packaging <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-amber-400">Materials & Machinery</span> for Your Business
+                        Reliable Packaging <span class="text-gradient bg-gradient-to-r from-brand-orange to-amber-400">Materials & Machinery</span> for Your Business
                     </h1>
                     <p class="text-xl text-blue-100 mb-4 font-medium leading-relaxed">
                         Suppliers and Stockists for all types of Packing Materials and Machinery.
@@ -142,7 +149,7 @@
                 <!-- Hero Image -->
                 <div class="relative lg:ml-auto w-full max-w-lg hidden lg:block">
                     <div class="absolute inset-0 bg-brand-orange rounded-2xl transform rotate-6 scale-105 opacity-80 shadow-2xl"></div>
-                    <img src="https://placehold.co/800x600/ffffff/1e3a8a?text=Packaging+Solutions" 
+                    <img src="https://placehold.co/800x600/ffffff/1e3a8a?text=Industrial+Packaging" 
                          alt="Packaging Materials and Machinery" 
                          class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3] border-4 border-white">
                 </div>
@@ -208,61 +215,47 @@
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
-                <!-- Cat 1 -->
-                <a href="https://wa.me/919538773388?text=Hi%20Solid%20Packagings%2C%20I%20would%20like%20to%20enquire%20about%20Tapes%20%26%20Adhesives." target="_blank" rel="noopener noreferrer" class="group block text-center bg-brand-light p-6 rounded-xl border border-blue-200 hover:border-brand-orange hover:bg-white hover:shadow-lg transition-all duration-300">
+                <a href="#cat-tapes" class="group block text-center bg-brand-light p-6 rounded-xl border border-blue-200 hover:border-brand-orange hover:bg-white hover:shadow-lg transition-all duration-300">
                     <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-tape text-3xl text-brand-blue group-hover:text-brand-orange transition-colors"></i>
                     </div>
                     <h4 class="font-bold text-brand-dark text-sm mb-2">Tapes & Adhesives</h4>
-                    <span class="text-xs text-brand-blue font-bold group-hover:text-brand-orange">Enquire Now &rarr;</span>
                 </a>
-                
-                <!-- Cat 2 -->
-                <a href="https://wa.me/919538773388?text=Hi%20Solid%20Packagings%2C%20I%20would%20like%20to%20enquire%20about%20Packaging%20Machinery." target="_blank" rel="noopener noreferrer" class="group block text-center bg-brand-light p-6 rounded-xl border border-blue-200 hover:border-brand-orange hover:bg-white hover:shadow-lg transition-all duration-300">
+                <a href="#cat-machinery" class="group block text-center bg-brand-light p-6 rounded-xl border border-blue-200 hover:border-brand-orange hover:bg-white hover:shadow-lg transition-all duration-300">
                     <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-cogs text-3xl text-brand-blue group-hover:text-brand-orange transition-colors"></i>
                     </div>
                     <h4 class="font-bold text-brand-dark text-sm mb-2">Machinery</h4>
-                    <span class="text-xs text-brand-blue font-bold group-hover:text-brand-orange">Enquire Now &rarr;</span>
                 </a>
-                
-                <!-- Cat 3 -->
-                <a href="https://wa.me/919538773388?text=Hi%20Solid%20Packagings%2C%20I%20would%20like%20to%20enquire%20about%20Protective%20Packaging." target="_blank" rel="noopener noreferrer" class="group block text-center bg-brand-light p-6 rounded-xl border border-blue-200 hover:border-brand-orange hover:bg-white hover:shadow-lg transition-all duration-300">
-                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-shield-halved text-3xl text-brand-blue group-hover:text-brand-orange transition-colors"></i>
-                    </div>
-                    <h4 class="font-bold text-brand-dark text-sm mb-2">Protective Packaging</h4>
-                    <span class="text-xs text-brand-blue font-bold group-hover:text-brand-orange">Enquire Now &rarr;</span>
-                </a>
-                
-                <!-- Cat 4 -->
-                <a href="https://wa.me/919538773388?text=Hi%20Solid%20Packagings%2C%20I%20would%20like%20to%20enquire%20about%20Films%20%26%20Wraps." target="_blank" rel="noopener noreferrer" class="group block text-center bg-brand-light p-6 rounded-xl border border-blue-200 hover:border-brand-orange hover:bg-white hover:shadow-lg transition-all duration-300">
+                <a href="#cat-films" class="group block text-center bg-brand-light p-6 rounded-xl border border-blue-200 hover:border-brand-orange hover:bg-white hover:shadow-lg transition-all duration-300">
                     <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-film text-3xl text-brand-blue group-hover:text-brand-orange transition-colors"></i>
                     </div>
                     <h4 class="font-bold text-brand-dark text-sm mb-2">Films & Wraps</h4>
-                    <span class="text-xs text-brand-blue font-bold group-hover:text-brand-orange">Enquire Now &rarr;</span>
                 </a>
-                
-                <!-- Cat 5 -->
-                <a href="https://wa.me/919538773388?text=Hi%20Solid%20Packagings%2C%20I%20would%20like%20to%20enquire%20about%20Mailing%20%26%20Shipping." target="_blank" rel="noopener noreferrer" class="group block text-center bg-brand-light p-6 rounded-xl border border-blue-200 hover:border-brand-orange hover:bg-white hover:shadow-lg transition-all duration-300 col-span-2 md:col-span-1 lg:col-span-1">
+                <a href="#cat-protective" class="group block text-center bg-brand-light p-6 rounded-xl border border-blue-200 hover:border-brand-orange hover:bg-white hover:shadow-lg transition-all duration-300">
                     <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-envelope-open-text text-3xl text-brand-blue group-hover:text-brand-orange transition-colors"></i>
+                        <i class="fa-solid fa-shield-halved text-3xl text-brand-blue group-hover:text-brand-orange transition-colors"></i>
                     </div>
-                    <h4 class="font-bold text-brand-dark text-sm mb-2">Mailing & Shipping</h4>
-                    <span class="text-xs text-brand-blue font-bold group-hover:text-brand-orange">Enquire Now &rarr;</span>
+                    <h4 class="font-bold text-brand-dark text-sm mb-2">Protective & Shipping</h4>
+                </a>
+                <a href="#cat-corrugated" class="group block text-center bg-brand-light p-6 rounded-xl border border-blue-200 hover:border-brand-orange hover:bg-white hover:shadow-lg transition-all duration-300 col-span-2 md:col-span-1 lg:col-span-1">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-box text-3xl text-brand-blue group-hover:text-brand-orange transition-colors"></i>
+                    </div>
+                    <h4 class="font-bold text-brand-dark text-sm mb-2">Corrugated Box & Paper</h4>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
+    <!-- Categorized Products Section -->
     <section id="products" class="py-16 bg-slate-50 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
                 <div>
                     <span class="text-brand-orange font-bold tracking-wider uppercase text-sm mb-2 block">Our Inventory</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-2">Packaging Products</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-2">All Packaging Products</h2>
                     <p class="text-slate-600 font-medium">Explore our complete range of packaging materials and machinery.</p>
                 </div>
                 <a href="https://wa.me/919538773388?text=Hi%20Solid%20Packagings%2C%20I%20have%20a%20bulk%20packaging%20requirement.%20Please%20contact%20me%20with%20pricing%20and%20availability." 
@@ -271,53 +264,109 @@
                    Enquire for Bulk Orders <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 xl:gap-8">
-                
-                <!-- Helper for generating product cards consistently -->
-                <script>
-                    const products = [
-                        { name: "Stationery Tape", desc: "Reliable sealing for everyday needs.", imgText: "Stationery+Tape" },
-                        { name: "Sewing Machine", desc: "Durable machines for heavy-duty bag sealing.", imgText: "Sewing+Machine" },
-                        { name: "Sealing Machines", desc: "Efficient impulse and continuous heat sealers.", imgText: "Sealing+Machines" },
-                        { name: "Plastic Stretch Film Roll", desc: "High elongation grade for pallet wrapping.", imgText: "Plastic+Stretch+Film+Roll" },
-                        { name: "Strapping Machine", desc: "Automated bundling for secure transit.", imgText: "Strapping+Machine" },
-                        { name: "Air Bubble Pouch", desc: "Pre-cut protective cushioning for fragile items.", imgText: "Air+Bubble+Pouch" },
-                        { name: "Caution Tape", desc: "High-visibility warning barriers.", imgText: "Caution+Tape" },
-                        { name: "Shrink Films", desc: "Heat-activated protective wrap.", imgText: "Shrink+Films" },
-                        { name: "Self Adhesive", desc: "Strong binding labels and adhesive solutions.", imgText: "Self+Adhesive" },
-                        { name: "Silica Gel", desc: "Moisture-absorbing desiccant packets.", imgText: "Silica+Gel" },
-                        { name: "Courier Bag", desc: "Tamper-proof mailing and shipping bags.", imgText: "Courier+Bag" },
-                        { name: "Corrugated Packaging", desc: "Sturdy rolls, sheets, and transit boxes.", imgText: "Corrugated+Packaging" }
-                    ];
 
-                    products.forEach(p => {
-                        const waMsg = encodeURIComponent(`Hi Solid Packagings, I am interested in ${p.name}. Please share the current price and availability.`);
-                        document.write(`
-                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover-card-fx group">
-                            <div class="relative overflow-hidden">
-                                <img src="https://placehold.co/400x300/f8fafc/1e3a8a?text=${p.imgText}" alt="${p.name}" class="w-full h-48 object-cover border-b border-slate-100 group-hover:scale-105 transition-transform duration-500">
-                            </div>
-                            <div class="p-5 flex-grow flex flex-col justify-between">
-                                <div>
-                                    <h3 class="font-bold text-lg text-brand-dark mb-1 leading-tight">${p.name}</h3>
-                                    <p class="text-xs text-slate-500 mb-4 font-medium">${p.desc}</p>
-                                </div>
-                                <div>
-                                    <p class="text-xs font-bold text-brand-blue bg-brand-light px-2 py-1.5 rounded border border-blue-100 mb-3 inline-block">Price on Enquiry</p>
-                                    <a href="https://wa.me/919538773388?text=${waMsg}" 
-                                       target="_blank" rel="noopener noreferrer"
-                                       class="w-full flex items-center justify-center gap-2 bg-brand-blue hover:bg-blue-800 text-white py-2.5 rounded-lg font-bold text-sm transition-colors shadow-sm">
-                                        <i class="fa-brands fa-whatsapp text-base"></i> Get Best Price
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        `);
-                    });
-                </script>
-                
+            <!-- JavaScript to render product categories dynamically for clean code -->
+            <div id="product-container" class="space-y-16">
+                <!-- Products injected here via JS to keep file clean -->
             </div>
+            
+            <script>
+                const productData = [
+                    {
+                        id: 'cat-tapes',
+                        categoryName: 'Tapes & Adhesives',
+                        icon: 'fa-tape',
+                        items: [
+                            { name: "Fiberglass Reinforced Filament Tape", price: "₹120 / Roll", img: "Filament+Tape" },
+                            { name: "Brown Bopp Tape", price: "₹95 / Roll", img: "Brown+Bopp+Tape" },
+                            { name: "Caution Tape", price: "₹150 / Roll", img: "Caution+Tape" },
+                            { name: "Self Adhesive Bopp Tape", price: "₹90 / Roll", img: "Self+Adhesive+Tape" }
+                        ]
+                    },
+                    {
+                        id: 'cat-machinery',
+                        categoryName: 'Machinery',
+                        icon: 'fa-cogs',
+                        items: [
+                            { name: "Revo Bag Closer Sewing Machine", price: "Price on Enquiry", img: "Bag+Closer+Machine" },
+                            { name: "Hand Sealing Machine", price: "₹1.9 K / Unit", img: "Hand+Sealer" },
+                            { name: "Fully Automatic Strapping Machine", price: "₹1.45 L / Unit", img: "Strapping+Machine" }
+                        ]
+                    },
+                    {
+                        id: 'cat-films',
+                        categoryName: 'Films & Wraps',
+                        icon: 'fa-film',
+                        items: [
+                            { name: "LLDPE Manual Stretch Film Roll", price: "₹160 / Kg", img: "Stretch+Film+Roll" },
+                            { name: "POF Polyolefin Shrink Film", price: "₹280 / Kg", img: "Shrink+Film" }
+                        ]
+                    },
+                    {
+                        id: 'cat-protective',
+                        categoryName: 'Protective & Shipping',
+                        icon: 'fa-shield-halved',
+                        items: [
+                            { name: "LDPE Air Bubble Pouch", price: "₹10 / Pc", img: "Air+Bubble+Pouch" },
+                            { name: "Desiccant Silica Gel Packets", price: "₹120 / Kg", img: "Silica+Gel" },
+                            { name: "Plain LDPE Courier Bag", price: "₹120 / Pkt", img: "Courier+Bag" }
+                        ]
+                    },
+                    {
+                        id: 'cat-corrugated',
+                        categoryName: 'Corrugated Box & Paper',
+                        icon: 'fa-box',
+                        items: [
+                            { name: "Corrugated Carton Box", price: "₹15 / Pc", img: "Carton+Box" },
+                            { name: "3 Ply Corrugated Roll", price: "₹50 / Roll", img: "Corrugated+Roll" },
+                            { name: "Slotted Carton Box", price: "₹10 / Pc", img: "Slotted+Box" }
+                        ]
+                    }
+                ];
+
+                const container = document.getElementById('product-container');
+                
+                let htmlContent = '';
+                productData.forEach(cat => {
+                    htmlContent += `
+                        <div id="${cat.id}" class="pt-8">
+                            <h3 class="text-2xl font-bold text-brand-blue border-b-2 border-brand-orange pb-2 mb-6 flex items-center gap-3">
+                                <i class="fa-solid ${cat.icon} text-brand-orange"></i> ${cat.categoryName}
+                            </h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    `;
+                    
+                    cat.items.forEach(product => {
+                        const priceDisplay = product.price.includes('Price') ? product.price : `Starting/Listed Price: ${product.price}`;
+                        const waMsg = encodeURIComponent(`Hi Solid Packagings, I am interested in ${product.name}. Please share the current price and availability.`);
+                        
+                        htmlContent += `
+                            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover-card-fx group">
+                                <div class="relative overflow-hidden bg-slate-100">
+                                    <img src="https://placehold.co/400x300/f8fafc/1e3a8a?text=${product.img}" alt="${product.name}" class="w-full h-48 object-cover border-b border-slate-100 group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
+                                </div>
+                                <div class="p-5 flex-grow flex flex-col justify-between">
+                                    <div>
+                                        <h4 class="font-bold text-lg text-brand-dark mb-3 leading-tight">${product.name}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs font-bold text-brand-blue bg-brand-light px-2 py-1.5 rounded border border-blue-100 mb-4 inline-block">${priceDisplay}</p>
+                                        <a href="https://wa.me/919538773388?text=${waMsg}" 
+                                           target="_blank" rel="noopener noreferrer"
+                                           class="w-full flex items-center justify-center gap-2 bg-brand-blue hover:bg-blue-800 text-white py-2.5 rounded-lg font-bold text-sm transition-colors shadow-sm">
+                                            <i class="fa-brands fa-whatsapp text-base text-whatsapp"></i> Get Best Price
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    htmlContent += `</div></div>`;
+                });
+                
+                container.innerHTML = htmlContent;
+            </script>
         </div>
     </section>
 
